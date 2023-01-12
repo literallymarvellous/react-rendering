@@ -1,11 +1,7 @@
 import Fastify, { FastifyInstance, FastifyReply } from "fastify";
 import path from "node:path";
-import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import { ViteDevServer, createServer as createViteServer } from "vite";
-import type { Handler, IncomingMessageExtended } from "@fastify/middie";
-import connect from "connect";
-import * as http from "node:http";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 

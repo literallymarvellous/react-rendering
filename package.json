@@ -5,11 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
-    "build": "npm run build:client && npm run build:server",
-    "build:client": "vite build --outDir dist/client --ssrManifest",
-    "build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server",
-    "generate": "vite build --outDir dist/static && npm run build:server && tsx prerender.ts",
-    "serve": "NODE_ENV=production tsx server.ts",
+    "build": "vite build",
     "test": "vitest run"
   },
   "dependencies": {
